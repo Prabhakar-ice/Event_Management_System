@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        body {
+            background-image: url('images/cover.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        .carousel-container {
+            max-width: 80%; /* Increased width */
+            height: 400px;
+            margin: auto;
+            background: transparent;
+            margin-bottom: 10px; /* Decreased bottom margin */
+        }
+        .carousel-inner img {
+            height: 400px;
+            object-fit: cover;
+        }
+        .carousel-item {
+            background: transparent;
+        } 
+    </style>
+    
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="bi bi-calendar-event"></i> Events
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item mx-2">
+                    <a class="nav-link active" href="#">
+                        <i class="bi bi-house-door"></i> Home
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="services.jsp">
+                        <i class="bi bi-tools"></i> Services
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="about.jsp">
+                        <i class="bi bi-info-circle"></i> About Us
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link" href="#contact">
+                        <i class="bi bi-envelope"></i> Contact
+                    </a>
+                </li>
+            </ul>
+            <ul class="navbar-nav">
+                <li class="nav-item mx-2">
+                    <a class="btn btn-outline-light" href="login.jsp">
+                        <i class="bi bi-box-arrow-in-right"></i> Login
+                    </a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="btn btn-primary" href="register.jsp">
+                        <i class="bi bi-person-plus"></i> Register
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container text-center mt-4">
+   <h1>Welcome to Event Management</h1>
+   <p class="lead">" Plan, manage, and execute events effortlessly—because great events deserve great management! "</p>
+</div>
+
+<!-- Transparent Bootstrap Carousel -->
+<div class="container mt=5">
+    <div class="carousel-container">
+        <div id="eventCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/image0.jpg" class="d-block w-100" alt="Event 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/image1.jpg" class="d-block w-100" alt="Event 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/image2.jpg" class="d-block w-100" alt="Event 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/image3.jpg" class="d-block w-100" alt="Event 4">
+                </div>
+            </div>
+            <!-- Carousel Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#eventCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#eventCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#eventCarousel" data-bs-slide-to="3"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
